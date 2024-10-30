@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DMRWordpressWidget\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-04-09 15:44+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Tim Zylinski <webmaster@zyblog.de>\n"
+"Language-Team: Tim Zylinski <webmaster@zyblog.de>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: D:\\work\\web\\wpdev\\wp-content\\plugins\\bic-media\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: bic-media.php:67
+msgid "Enter a ISBN-13 number"
+msgstr "Geben sie eine ISBN-13 Nummer ein"
+
+#: bic-media.php:68
+msgid "Please enter a 13 digit ISBN number without any delimiter"
+msgstr "Bitte geben Sie nur eine 13 stellige ISBN Nummer ohne Trennzeichen ein"
+
+#: bic-media.php:69
+#: bic-media.php:116
+msgid "Add BIC Media Widget"
+msgstr "BIC Media Widget hinzufügen"
+
+#: bic-media.php:115
+msgid "/wp-content/plugins/bic-media/bicm-media-button.php?"
+msgstr "/wp-content/plugins/bic-media/bicm-media-button-de.php?"
+
+#~ msgid "Search books/audio books"
+#~ msgstr "Buch/H&ouml;rbuch suchen"
+
+#, fuzzy
+#~ msgid "Add BICM Widget"
+#~ msgstr "BIC Media Widget hinzufügen"
+#~ msgid "Books"
+#~ msgstr "Bücher"
+

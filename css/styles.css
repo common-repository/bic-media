@@ -1,0 +1,33 @@
+@import "wp.bicm.css";
+@import "wp.bicm.tabs.css";
+@import "wp.bicm.tablesorter.css";
+
+#book {
+background: #fff;
+}
+
+
+#audio {
+background: #fff;
+}
+
+#message {
+border: 1px white solid;
+background: white;
+text-align: center;
+width: 340px;
+margin-left: 14px;
+margin-top: 50px;
+}
+
+#result  > div {
+height: 282px;
+}
+
+div.ui-tabs-panel {
+margin: 0 0 0 0;
+}
+
+.tablesorter a {
+ text-decoration: none;
+}

@@ -1,0 +1,102 @@
+=== Plugin Name ===
+Contributors: BICMedia
+Donate link: http://www.bic-media.com/dmr/index.jsp?nav=widget&nav2=wordpressplugin&lang=d
+Tags: bic media, plugin, books, media, isbn, buch, b&#252;cher, h&#246;rbuch, h&#246;rprobe, leseprobe, volltextsuche, audiobuch, audiobook
+Requires at least: 2.5
+Tested up to: 2.5
+Stable tag: 1.0
+
+Das BIC Media Widget einfach und bequem in das eigene Blog einbinden.
+
+== Beschreibung ==
+
+Das BIC Media Widget ist eine auf der Flash-Technologie basierende Komponente zur einfachen Integration der BIC Media Services in beliebigen Webseiten.
+Es können sowohl Bücher als auch Hörbücher eingebunden werden. Sollte zu einem gesuchten Begriff ein Hörbuch oder Buch verfügbar sein, wird dieses automatisch vom Widget angezeigt.
+Mehr Information zu BIC Media finden Sie unter [http://www.bic-media.com](http://www.bic-media.com)  
+
+Mit Hilfe des Widgets können Lese- und Hörproben aus mehreren Tausend Büchern und Hörbuchern in das eigene Blog eingebaut werden.
+
+Mit einem ShortTag wie z.B. `[bic-media isbn="9783442310197"]` wird das Widget in einem Beitrag angezeigt.
+Alle nötigen Javascripts zur Anzeige des Widgets werden vom Plugin automatisch eingebunden.
+
+Im WordPress Editor gibt es nach der Installation des Plugins in der HTML Ansicht einen neuen Button "BIC Media Widget hinzufügen". 
+Beim Klick auf den Button wird nur noch die ISBN-13 erwartet, die dann überprüft wird.
+
+Noch bequemer ist die Suche nach einem Buch über einen neuen "Media Button". Dieser ist allerdings nur sichtbar und nutzbar, wenn im Browser Javascript aktiviert ist.
+Oberhalb des Eingabefensters fügt das Plugin ein neues Buch-Icon "BIC Media Widget hinzufügen". Ein Klick darauf öffnet einen neuen Dialog, in dem komfortabel ein Buch ausgewählt und dann in den Editor übernommen werden kann.
+
+Es gibt zwei verschiedene Widgets. 
+
+
+= Einzel Widget =
+
+Mit dem Einzel-Widget kann nur ein Buch oder Hörbuch dargestellt werden. Der ShortTag dafür lautet z.B.
+
+`[bic-media isbn="9783442310197" param="showTooltip=no"]` wobei 9783442310197 die gewünschte ISBN Nummer und showTooltip=no der gewünschte Parameterstring ist.
+
+Alle möglichen Konfigurationsparameter werden hier beschrieben: [http://www.bic-media.com/dmr/index.jsp?nav=widget&nav2=config](http://www.bic-media.com/dmr/index.jsp?nav=widget&nav2=config) 
+
+
+= Karussell Widget =
+
+Ein Widget, mit dem mehrere Bücher oder Hörbücher gleichzeitig dargestellt werden können. Dazu kann man entweder eine Liste von ISBN Nummern eingeben oder mit Suchbegriffen eine Auswahl an Büchern zusammenstellen.
+Über Autor, Titel und Verlag können die Ergebnisse gefiltert werden. Die Darstellung kann über Breite, Höhe, Hintergrundfarbe, Breite der Buchcover und über die maximale Anzahl der dargestellten Bücher individuell angepasst werden.
+
+Der ShortTag für dieses Widget lautet z.B.:
+
+`[bic-carousel param="{'width':400, 'height':250, 'publisher':'Heyne Verlag','title':'skorpion','bgcolor':'#B92845', 'size':20, 'coverWidth':125}"]`
+
+wobei der Parameter param die Parameter enthält, die per Dialog ermittelt oder per Hand eingegeben werden können.
+
+Alle möglichen Konfigurationsparameter werden hier beschrieben: [http://www.bic-media.com/dmr/index.jsp?nav=widget&nav2=carouselConfig](http://www.bic-media.com/dmr/index.jsp?nav=widget&nav2=carouselConfig) 
+
+
+== Installation ==
+
+Das Plugin inklusive des Verzeichnisses "bic-media" ins Plugin Verzeichnis von WordPress kopieren. Anschließend im WordPress Admin Panel unter "Plugins" aktivieren.
+
+== Benutzung ==
+
+*  Bücher/Hörbücher Suche
+
+In dieser Oberfläche können einzelne Bücher oder Hörbücher gesucht werden. Dazu gibt man eine ISBN-13 Nummer ein oder sucht über Title, Autor und Verlag.
+Nach der Eingabe ruft man mit der Returntaste oder dem Button Suchen das Ergebnis ab. Im unteren Bereich der Maske wird das Ergebnis tabellarisch dargestellt. Bücher und Hörbücher werden in getrennten Reitern angezeigt.
+Ist das gewünschte Medium gefunden, klickt man auf "Auswahl" und der ShortTag wird im WordPress Editor erstellt und die Suchmaske geschossen.
+
+* Karussell Widget
+
+Ähnlich dem Einzel Widget kann über ISBN Nummern oder Suchworte das Widget befüllt werden. Die ISBN Nummern müssen durch Kommas getrennt werden. 
+Hat man eine Liste mit ISBN Nummern eingegeben und drückt die RETURN Taste oder klickt auf den Button "Vorschau", wird die ISBN-Liste gefiltert und unbekannte ISBN Nummern werden entfernt.
+Die Werte für Breite, Höhe und Anzahl der Einträge müssen Zahlen größer 0 sein. Die Hintergrundfarbe muss in hexadezimalen Farbwerten mit vorangestelltem # angegeben werden. 
+Mehr Informationen zu Farben in HTML z.B. [hier](http://www.uni-magdeburg.de/counter/rgb.txt.shtml).
+
+
+== Frequently Asked Questions ==
+
+= Was sind die Konfigurations-Optionen? =
+
+Die Optionen für das Einzel-Widget sind [hier](http://www.bic-media.com/dmr/index.jsp?nav=widget&nav2=config "Konfiguration des Widgets") gelistet.
+Für das Karussell Widget sind die möglichen Parameter [hier](http://www.bic-media.com/dmr/index.jsp?nav=widget&nav2=carouselConfig "Konfiguration Karussell Widget") gelistet.
+
+Parametern, die nicht über die Oberfläche eingestellt werden können, kann man einfach über den Parameter im ShortTag hinzufügen, z.B.
+
+`[bic-media isbn="9783442310197" param="showTooltip=no"]`
+
+
+= Das Widget zeigt nichts an! Warum? =
+
+Gründe könnten sein:
+
+* Falsche ISBN Nummer
+* Das Buch oder die CD sind (noch) nicht in die Datenbank des Widgets aufgenommen worden
+
+= Das Widget wird in den WordPress Widget Einstellungen nicht angezeigt =
+
+Die BIC Media Widgets sind Flash Bausteine, die nur im Blog angezeigt werden. In der WordPress Admin Oberfläche und insbesondere in den Widget Einstellungen des Themes tauchen diese Widgets nicht auf.
+
+
+== Screenshots ==
+
+1. Media Button, der von BIC Media Plugin eingefügt wird
+2. Oberfläche zur Konfiguration des Einzel-Widgets
+3. Oberfläche zur Konfiguration des Karussell Widgets
